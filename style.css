@@ -1,0 +1,336 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Arima', cursive;
+font-family: 'Finlandica', sans-serif;
+font-family: 'Gantari', sans-serif;
+font-family: 'Kantumruy Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+*::before{
+    box-sizing:border-box;
+}
+*::after{
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+
+}
+header{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(15deg,rgb(246, 233, 233) 40%,rgb(47, 154, 235));
+    box-shadow: 0px 3px 15px 1px rgb(172, 166, 166);
+}
+
+.nav{
+     margin-left: 1rem;
+        text-decoration:none;
+        border: 1.9px solid rgb(12, 11, 11);
+        border-radius: 18px;
+        font-weight: 700;
+        color: black;
+        padding:8px;
+        font-weight: 500;
+        transition: 200ms ease-out;
+}
+.nav:hover{
+    color:white;
+    background-color: rgb(183, 46, 46);
+    border:none
+}
+main{
+    width:100%;
+    height:auto;
+    border: 2px solid red;
+}
+.container{
+    width: 100%;
+    height:fit-content;
+    border: 2px solid blue;
+}
+.sect-1{
+    display: flex;
+    align-items: center;
+    background-color: rgb(239, 243, 247);
+    word-wrap: break-word;
+}
+.sect-1 > img{
+        width:40%;
+        height: 100%;
+
+}
+.sect-1 > h2 {
+    margin-left: 2rem;
+    font-size: min(32px,4rem);
+    font-weight: 800;
+}
+.sect-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 2rem; */
+    background:rgb(255, 255, 255);
+    color: black;
+}
+.sect-2 > h2{
+    letter-spacing: 5px;
+}
+.divider{
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient( to right,rgb(230, 110, 6),20%,rgb(237, 246, 238),rgb(58, 219, 61));
+    margin-bottom: 10px;
+}
+.s2_left{
+    
+   
+    width: 60%;
+    height: 100%;
+}
+.s2_left > img {
+    width: 100%;
+    height: 100%;
+}
+.s2_right{
+   
+    width: 40%;
+    height: 100%;
+    padding:2rem;
+    /* text-align: center; */
+    font-size: min(1.1rem,1.6rem);
+}
+.about_description{
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    
+}
+.s2_right > h2 {
+    text-align: center;
+}
+.grid-container{
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,1fr);
+    padding: 2rem;
+    
+
+    
+    
+    
+}
+.s3_card{
+
+    margin: 5px;
+    border:2px solid brown ;
+    /* width: auto; */
+    /* max-width: 19rem; */
+    height:fit-content;
+    max-height: calc(100% - 5%);
+    padding:1.5rem;
+    background-color: antiquewhite;
+    border-radius: 1.2rem;
+    transition: 200ms ease-in;
+    word-wrap: break-word;
+}
+.s3_card:hover{
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px rgb(172, 166, 166);
+}
+.divider1{
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background: rgb(106, 183, 241);
+    margin-bottom: 10px;
+}
+
+.s3_card >footer > a{
+    margin-left: 1rem;
+    text-decoration:none;
+    border: 1.9px solid rgb(12, 11, 11);
+    border-radius: 18px;
+    font-weight: 900;
+    color: black;
+    padding:8px;
+    font-weight: 500;
+    transition: 200ms ease-out;
+    cursor:pointer;
+    margin:5px 5px 0 5px;
+}
+.s3_card  >footer> a:hover{
+    background-color: rgb(0, 132, 248);
+    color: white;
+    
+}
+.s3_card > h5{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+}
+.s3_card > footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.sect-3{
+    padding: 2rem;
+    height:max(40rem,42.5rem) ;
+}
+.s3_header {
+    text-align: center;
+    margin:.8rem;
+    font-size: larger;
+}
+.sect-4{
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: slategrey;
+    color: aliceblue;
+}
+.s4_header{
+    text-align: center;
+    margin:.8rem;
+    font-size: larger;
+    width: 100%;
+}
+.skill h2{
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-top:40px;
+        margin-bottom:5px;
+        color:rgb(255, 255, 255);
+        font-size: 16px;
+}
+.progress-bar{
+    background: #959595;
+    width: 600px;
+    height:10px;
+    border-radius: 5px;
+    /* transition: 200ms; */
+    /* margin-bottom: 22px; */
+}
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0;
+    /* background: red; */
+}
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background:rgb(170, 182, 179);
+    float:right;
+    margin-top:-15px;
+    margin-right: -20px;
+    color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.html{
+    background-color: rgb(239, 8, 8);
+    animation: html 1s linear forwards;
+}
+.css{
+    background-color: rgb(51, 0, 255);
+    animation: css 1s linear forwards;
+
+}
+.js{
+    background-color: rgb(217, 255, 0);
+    animation: js 1s linear forwards;
+
+}
+.react{
+    background-color: rgb(6, 239, 239);
+    animation: react 1s linear forwards;
+
+}
+.express{
+    background-color: rgb(93, 87, 87);
+    animation: express 1s linear forwards;
+
+}
+.html span{
+    border:1px solid rgb(239, 8, 8);
+}
+.css span{
+    border:1px solid rgb(51, 0, 255);
+}
+.js span{
+    border:1px solid rgb(217, 255, 0);
+}
+.react span{
+    border:1px solid rgb(6, 239, 239);
+}
+.express span{
+    border:1px solid rgb(93, 87, 87);
+
+}
+@keyframes html{
+        100%{
+            width:90%;        }
+}
+@keyframes css{
+    100%{
+        width:90%;        }
+}
+@keyframes js{
+    100%{
+        width:80%;  
+          }
+}
+@keyframes react{
+    100%{
+        width:70%;        }
+}
+@keyframes express{
+    100%{
+        width:65%;      
+      }
+}
+.sect-5{
+    padding:2rem;
+    width: 100%;
+}
+.s5-header{
+    text-align: center;
+    margin-bottom:.9rem;
+    font-size: larger;
+    width: 100%;
+}
+.s5-main{
+    margin: 1rem;
+    font-size: smaller;
+
+}
+.links{
+    margin: 1rem;
+    font-size: larger;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    background: rgb(229, 235, 233);
+    padding:1rem;
+    border-radius: 1rem;
+    transition: 200ms;
+}
+.links:hover{
+    box-shadow: 0px 3px 15px 1px rgb(172, 166, 166);
+}
