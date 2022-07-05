@@ -47,12 +47,10 @@ header{
 main{
     width:100%;
     height:auto;
-    border: 2px solid red;
 }
 .container{
     width: 100%;
     height:fit-content;
-    border: 2px solid blue;
 }
 .sect-1{
     display: flex;
@@ -129,7 +127,7 @@ main{
 .s3_card{
 
     margin: 5px;
-    border:2px solid brown ;
+    
     /* width: auto; */
     /* max-width: 19rem; */
     height:fit-content;
